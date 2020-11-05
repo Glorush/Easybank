@@ -1,0 +1,347 @@
+
+
+html{
+    font-size:62.5%;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size:18px;
+    font-size: 1.8rem;
+    overflow-x: hidden;
+    position: relative;
+}
+ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6{
+    margin:0;
+}
+a{
+    text-decoration:none;
+}
+p{
+    margin:0;
+    padding:0;
+}
+.section-padding{
+    padding:120px 0;
+    padding:12rem 0;
+}
+/*=============================================================
+================    header area css     ===============
+=============================================================*/
+.header-area {
+    position: absolute;
+    width: 100% !important;
+    background: hsl(0, 0%, 100%);
+    z-index: 25;
+    padding:15px;
+    padding:1.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+}
+.menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.menu ul li {
+    margin:0 15px;
+    margin: 0 1.5rem;
+}
+.menu ul li a {
+    color:  hsl(233, 8%, 62%);
+    padding:15px 0;
+    padding: 1.5rem 0;
+    display: inline-block;
+    border-bottom: 4px solid transparent;
+    font-weight: 700;
+}
+.menu ul li a:hover{
+    color: hsl(233, 26%, 24%);
+    border-color:hsl(136, 65%, 51%);
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: hsl(233, 26%, 24%);
+    border-color:hsl(136, 65%, 51%);
+    background: unset;
+}
+.sticky {
+    position: fixed;
+    z-index: 68;
+}
+.invite-btn a {
+    display: inline-block;
+    color: hsl(0, 0%, 100%);
+    padding:10px 25px;
+    padding: 1rem 2.5rem;
+    border-radius: 24px;
+    background-image: -webkit-linear-gradient(45deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    background-image: linear-gradient(45deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    -webkit-transition:.3s;
+    transition:.3s;
+    float:right;
+}
+.invite-btn a:hover{
+    opacity: .6;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+}
+/*humbarger*/
+.toggle-menu {
+    width: 50px;
+    text-align: center;
+    cursor:pointer;
+    position: relative;
+}
+.logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.toggle-menu span {
+    width: 40px;
+    height: 5px;
+    background: #000;
+    display: block;
+    margin: 6px;
+    -webkit-transition:.4s;
+    transition: .4s;
+}
+.toggle-menu.active span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    position: absolute;
+    top: 7px;
+    right: 0
+}
+.toggle-menu.active span:nth-child(2) {
+    display: none;
+}
+.toggle-menu.active span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    position: absolute;
+    top: 7px;
+    right: 0
+}
+.toggle-menu.active {
+    padding-bottom:39px;
+    padding-bottom: 3.9rem;
+}
+.toggle-menu{
+    display: none;
+}
+
+/*=============================================================
+================    banner area css     ===============
+=============================================================*/
+
+.banner-area {
+    background: url(../images/bg-intro-desktop.svg) no-repeat;
+    background-size: 100rem 95rem;
+    padding:240px 0 200px;
+    padding: 24rem 0 20rem;
+    background-position:215% 62%;
+    background-color: hsl(0, 0%, 98%);
+}
+.main-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.banner-content {
+    width: 40%;
+}
+.banner-content h1 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.banner-content p{
+    margin:20px 0 30px;
+    margin:2rem 0 3rem;
+    color:  hsl(233, 8%, 62%);
+}
+.banner-overlay-img {
+    width: 50%;
+    -webkit-transform: translate(5%,-92%);
+            transform: translate(5%,-92%);
+}
+.banner-overlay-img img {
+    position: absolute;
+    top: 0;
+}
+
+/*=============================================================
+================    bank area css   ===============
+=============================================================*/
+
+.section-title {
+    max-width: 600px;
+    width: 100%;
+}
+.section-title h2 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom:10px;
+    margin-bottom: 1rem;
+}
+.section-title p {
+    line-height: 30px;
+    margin-bottom:40px;
+    margin-bottom: 4rem;
+}
+.single-bank-items {
+    margin-bottom:30px;
+    margin-bottom: 3rem;
+    -webkit-transition:all .4s ease;
+    transition: all .4s ease;
+    padding:20px 10px 30px;
+    padding:2rem 1rem 3rem;
+}
+.single-bank-items:hover{
+    box-shadow: 0px 3px 15px #ddd;
+}
+.bank-img {
+    padding:30px 0;
+    padding: 3rem 0;
+}
+.bank-content {
+    max-width: 95%;
+}
+.bank-content p{
+    color:  hsl(233, 8%, 62%);
+}
+.bank-content h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom:20px;
+    margin-bottom: 2rem;
+}
+
+
+/*=============================================================
+================    bank area css   ===============
+=============================================================*/
+.letest-article-area{
+    background: hsl(0, 0%, 98%);
+}
+.articles-blog {
+    margin-top:40px;
+    margin-top: 4rem;
+    width: 100%;
+}
+.aritcle-img {
+    width: 100%;
+    height:200px;
+    height: 20rem;
+}
+.aritcle-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.aritcle-content span {
+    font-size: 14px;
+    color: hsl(233, 8%, 62%);
+}
+.aritcle-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    margin:15px 0;
+    margin: 1.5rem 0;
+}
+.aritcle-content {
+    padding:20px;
+    padding: 2rem;
+    background: hsl(0, 0%, 100%);
+}
+.aritcle-content h3 a{
+    color:hsl(233, 26%, 24%);
+}
+.aritcle-content h3 a:hover{
+    color: hsl(192, 70%, 51%);
+}
+.aritcle-content p {
+    font-size: 17px;
+    color: hsl(233, 8%, 62%);
+}
+
+/*=============================================================
+================    footer area css     ===============
+=============================================================*/
+.footer-area{
+    background:-webkit-linear-gradient(45deg, #2980b9, #34495e);
+    background:linear-gradient(45deg, #2980b9, #34495e);
+    padding:80px 0;
+    padding: 8rem 0;
+}
+.soical-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top:50px;
+    margin-top: 5rem;
+}
+.soical-icon li a i {
+    color: hsl(0, 0%, 100%);
+    width: 40px;
+    height: 40px;
+    border: 1px solid hsl(0, 0%, 100%);
+    margin:5px;
+    margin: .5rem;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+}
+.soical-icon li a i:hover,
+.f-manu-items a:hover{
+    color:hsl(192, 70%, 51%);
+}
+.footer-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.f-manu-items a {
+    display: block;
+    font-size:20px;
+    font-size: 2rem;
+    color:  hsl(0, 0%, 100%);
+    margin-bottom:15px;
+    margin-bottom: 1.5rem;
+}
+.f-right {
+    float: right;
+}
+.f-right .invite-btn {
+    margin-bottom:40px;
+    margin-bottom: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+.f-right p{
+    color: hsl(0, 0%, 100%);
+}
