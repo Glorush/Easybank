@@ -173,6 +173,16 @@
 		        flex-direction: column;
 		text-align: center;
 	}
+	.f-manu-items a{
+	    margin-bottom: 1rem;
+	    margin-bottom: 10px;
+	    padding-bottom: 1rem;
+	    margin-bottom: 10px;
+	    border-bottom: 1px solid;
+	}
+	.f-manu-items:last-child a:last-child{
+	    border-bottom: unset;
+	}
 }
 @media screen and (max-width: 575px){
 	.menu{

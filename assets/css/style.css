@@ -323,12 +323,13 @@ p{
 }
 .f-manu-items a {
     display: block;
-    font-size:20px;
+    font-size: 20px;
     font-size: 2rem;
-    color:  hsl(0, 0%, 100%);
-    margin-bottom:15px;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 15px;
     margin-bottom: 1.5rem;
 }
+
 .f-right {
     float: right;
 }
